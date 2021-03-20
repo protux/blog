@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://protux.de/"
+languageCode = "en-gb"
+title = "Random thoughts and stuff"
 theme = "notepadium"
