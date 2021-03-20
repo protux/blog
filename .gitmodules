@@ -1,0 +1,3 @@
+[submodule "protux-blog/themes/notepadium"]
+	path = protux-blog/themes/notepadium
+	url = https://github.com/cntrump/hugo-notepadium
