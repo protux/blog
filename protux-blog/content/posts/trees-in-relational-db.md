@@ -14,7 +14,7 @@ I wanted to write an application where the user can put things into categories. 
 There are multiple approaches, but most have the problem, that building the tree is super slow or need a lot of loops. So it would be great to have some sort of order where we need to loop over all the branches and leaves only once. That would be efficient enough for this usecase.
 
 ## The solution
-Let's say we have a category with a category name and each category can have one parent:
+Let's say we have a category with a name and each category can have one parent:
 ```python
 class Category:
     name: str
@@ -108,7 +108,7 @@ first_category_row: CategoryRow = sorted_category_rows[0]
 root_category: Category = Category(name=first_category_row.name, tree_position=first_category_row.tree_position)
 add_children(root_category, sorted_category_rows[1:])
 ```
-With this function we would get a valid tree which looks like the following json representation:
+This function visits every branch only once. With this function we would get a valid tree which looks like the following json representation:
 ```json
 {
   "name": "recipes",
@@ -188,6 +188,6 @@ With this function we would get a valid tree which looks like the following json
   ]
 }
 ```
-This output can now be stored in a cache to be delivered from there and does not have to be recalculated too often.
+This JSON output can now be stored in a cache to be delivered from there and does not have to be recalculated too often.
 
 If you like you can [see the full code example here](https://gist.github.com/protux/7bddd2629f922641ba4acb0ad32c5848).
