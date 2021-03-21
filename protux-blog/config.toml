@@ -1,4 +1,12 @@
 baseURL = "https://protux.de/"
 languageCode = "en-gb"
-title = "Random thoughts and stuff"
+title = "protux.de - Random thoughts and stuff"
+
 theme = "notepadium"
+enableRobotsTXT = true
+dateFormat = "02.01.2006"
+license = "CC-BY SA"
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
