@@ -1,7 +1,7 @@
 ---
 title: "Save trees in a relational Database"
 date: 2021-03-20T08:32:47+01:00
-draft: true
+draft: false
 ---
 # Store trees in a relational database efficiently
 If you have some kind of tree in your application you should store it in a database specialized in graphs and trees, right? It depends. What if it is only a small tree and it is your only tree and you just don't want to manage a graph database just for this single graph which barely changes? Or what if you are just too lazy? Or what if you are not too lazy but you just don't care? Then I might have a solution for you.
